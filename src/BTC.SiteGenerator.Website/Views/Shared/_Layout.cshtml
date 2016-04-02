@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <title>BTC Site Generator - @ViewBag.Title</title>
+
+</head>
+<body>
+
+    @RenderBody()
+    <script src="~/scripts/jspm_packages/system.js"></script>
+    <script src="~/scripts/config.js"></script>
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.5.8/full-all/ckeditor.js"></script> @*see https://cdn.ckeditor.com/ for more options*@
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

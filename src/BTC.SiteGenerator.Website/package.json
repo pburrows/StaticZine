@@ -1,0 +1,26 @@
+{
+  "name": "sitegenerator",
+  "version": "1.0.0",
+  "description": "Generates static websites",
+  "main": "scripts/app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "jspm": "^0.16.32"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "scripts"
+    },
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.5.3",
+      "angular-modal-service": "npm:angular-modal-service@^0.6.10",
+      "angular-ui-router": "github:angular-ui/ui-router@^0.2.18"
+    },
+    "devDependencies": {}
+  }
+}
