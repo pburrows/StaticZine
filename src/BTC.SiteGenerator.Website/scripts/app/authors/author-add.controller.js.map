@@ -1,0 +1,1 @@
+{"version":3,"file":"author-add.controller.js","sourceRoot":"","sources":["author-add.controller.ts"],"names":["AuthorAddController","AuthorAddController.constructor","AuthorAddController.init"],"mappings":";;;;;YACA;gBAEIA;oBACIC,IAAIA,CAACA,IAAIA,EAAEA,CAACA;gBAChBA,CAACA;gBAEDD,kCAAIA,GAAJA;oBACIE,EAAEA;gBACNA,CAACA;gBACLF,0BAACA;YAADA,CAACA,AATD,IASC;YATD,qDASC,CAAA"}

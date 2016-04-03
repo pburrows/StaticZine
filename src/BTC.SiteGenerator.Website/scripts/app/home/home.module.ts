@@ -1,5 +1,5 @@
 ﻿import {HomeController} from "./home.controller";
-import {SiteGenNavbarDirective, SiteGenNavbarController} from "../common/nav/navbar.component";
+import {SiteGenNavbarDirective} from "../common/nav/navbar.component";
 
 const moduleName = "app.home";
 

@@ -1,0 +1,1 @@
+{"version":3,"file":"author-list.controller.js","sourceRoot":"","sources":["author-list.controller.ts"],"names":["AuthorListController","AuthorListController.constructor","AuthorListController.init"],"mappings":";;;;;YACA;gBAEIA;oBACIC,IAAIA,CAACA,IAAIA,EAAEA,CAACA;gBAChBA,CAACA;gBAEDD,mCAAIA,GAAJA;oBACIE,EAAEA;gBACNA,CAACA;gBACLF,2BAACA;YAADA,CAACA,AATD,IASC;YATD,uDASC,CAAA"}

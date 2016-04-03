@@ -1,1 +1,48 @@
-﻿
+﻿<div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                StaticZine
+            </a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+                <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Publications <b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a ui-sref="publications" >List</a></li>
+                        <li><a ui-sref="publication-add">Create</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Articles <b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a ui-sref="articles">List</a></li>
+                        <li><a ui-sref="articles-add">Create</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Authors <b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a ui-sref="authors">List</a></li>
+                        <li><a ui-sref="authors-add">Create</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href ng-click="mnuCtrl.click('settings-user')">User</a></li>
+                        <li><a href ng-click="mnuCtrl.click('settings-site')">Site</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href ng-click="mnuCtrl.click('logout')">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -44,6 +44,8 @@ namespace BTC.SiteGenerator.Website.Data.Domain
         public DateTime DatePublished { get; set; }
 
         public ArticleState ArticleState { get; set; }
+
+        public ICollection<ArticleAuthorMap> Authors { get; set; }
     }
 
     public enum ArticleState
@@ -78,5 +80,25 @@ namespace BTC.SiteGenerator.Website.Data.Domain
         public int ArticleTemplateSectionDefinitionId { get; set; }
         public string Name { get; set; }
         public int Order { get; set; }
+    }
+
+    public class ArticleAuthorMap
+    {
+        public int ArticleAuthorMapId { get; set; }
+        public int ArticleId { get; set; }
+        public int AuthorId { get; set; }
+
+        public virtual Article Article { get; set; }
+        public virtual Author Author { get; set; }
+    }
+
+    public class Author
+    {
+        public int AuthorId { get; set; }
+        public string FirstName { get; set; }
+        public string MiddleName { get; set; }
+        public string LastName { get; set; }
+
+        public ICollection<ArticleAuthorMap> Articles { get; set; }
     }
 }

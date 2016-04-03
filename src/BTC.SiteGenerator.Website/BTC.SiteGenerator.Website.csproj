@@ -229,8 +229,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="gulpfile.js" />
+    <Content Include="scripts\app\articles\article-add.html" />
+    <Content Include="scripts\app\articles\article-list.html" />
+    <Content Include="scripts\app\authors\author-add.html" />
+    <Content Include="scripts\app\authors\author-list.html" />
     <Content Include="scripts\app\common\nav\navbar.html" />
     <Content Include="scripts\app\home\home.html" />
+    <Content Include="scripts\app\publications\publication-add.html" />
+    <Content Include="scripts\app\publications\publication-list.html" />
     <Content Include="scripts\config.js" />
     <Content Include="scripts\jspm_packages\system.js" />
     <Content Include="scripts\lib\ui-bootstrap-tpls-1.2.5.min.js" />
@@ -260,11 +266,20 @@
   <ItemGroup>
     <TypeScriptCompile Include="scripts\app\app.bootstrap.ts" />
     <TypeScriptCompile Include="scripts\app\app.ts" />
+    <TypeScriptCompile Include="scripts\app\articles\article-add.controller.ts" />
+    <TypeScriptCompile Include="scripts\app\articles\article-list.controller.ts" />
+    <TypeScriptCompile Include="scripts\app\articles\articles.module.ts" />
+    <TypeScriptCompile Include="scripts\app\authors\author-add.controller.ts" />
+    <TypeScriptCompile Include="scripts\app\authors\author-list.controller.ts" />
+    <TypeScriptCompile Include="scripts\app\authors\authors.module.ts" />
     <TypeScriptCompile Include="scripts\app\common\nav\navbar.component.ts" />
     <TypeScriptCompile Include="scripts\app\config\app.config.ts" />
     <TypeScriptCompile Include="scripts\app\config\route.config.ts" />
     <TypeScriptCompile Include="scripts\app\home\home.controller.ts" />
     <TypeScriptCompile Include="scripts\app\home\home.module.ts" />
+    <TypeScriptCompile Include="scripts\app\publications\publication-add.controller.ts" />
+    <TypeScriptCompile Include="scripts\app\publications\publication-list.controller.ts" />
+    <TypeScriptCompile Include="scripts\app\publications\publications.module.ts" />
     <TypeScriptCompile Include="scripts\module_defs\angular-ui-bootstrap.d.ts" />
     <TypeScriptCompile Include="scripts\module_defs\angular-ui-router.d.ts" />
     <TypeScriptCompile Include="scripts\module_defs\lodash.d.ts" />

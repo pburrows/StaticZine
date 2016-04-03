@@ -1,12 +1,11 @@
 System.register([], function(exports_1) {
-    var WsNavbarController;
     function SiteGenNavbarDirective() {
         "use strict";
         return {
-            templateUrl: "/scripts/app/common/navbar/navbar.html",
+            templateUrl: "/scripts/app/common/nav/navbar.html",
             restrict: "E",
-            controller: "siteGenNavbarController",
-            controllerAs: "mnuCtrl",
+            //controller: "siteGenNavbarController",
+            //controllerAs: "mnuCtrl",
             link: function (scope, elem, attrs) {
             }
         };
@@ -15,18 +14,15 @@ System.register([], function(exports_1) {
     return {
         setters:[],
         execute: function() {
-            WsNavbarController = (function () {
-                function WsNavbarController($rootScope) {
-                    this.$rootScope = $rootScope;
-                }
-                WsNavbarController.prototype.click = function (command) {
-                    var name = "sitegen:" + command;
-                    this.$rootScope.$broadcast(name, {});
-                };
-                return WsNavbarController;
-            })();
-            exports_1("WsNavbarController", WsNavbarController);
         }
     }
 });
+//export class SiteGenNavbarController {
+//    constructor(private $rootScope: ng.IRootScopeService) {
+//    }
+//    click(command: string): void {
+//        let name = "sitegen:" + command;
+//        this.$rootScope.$broadcast(name, {});
+//    }
+//} 
 //# sourceMappingURL=navbar.component.js.map
