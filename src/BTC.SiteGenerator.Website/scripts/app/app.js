@@ -1,5 +1,5 @@
-System.register(["angular", "angular-ui-router", "ui-bootstrap", "angular-modal-service", "./config/app.config", "./home/home.module", "./publications/publications.module", "./articles/articles.module", "./authors/authors.module"], function(exports_1) {
-    var config, home, publication, articles, authors;
+System.register(["angular", "angular-ui-router", "ui-bootstrap", "angular-modal-service", "./config/app.config", "./home/home.module", "./publications/publications.module", "./articles/articles.module", "./authors/authors.module", "./common/nav/navbar.component"], function(exports_1) {
+    var config, home, publication, articles, authors, navbar_component_1;
     var moduleName, app;
     return {
         setters:[
@@ -21,6 +21,9 @@ System.register(["angular", "angular-ui-router", "ui-bootstrap", "angular-modal-
             },
             function (authors_1) {
                 authors = authors_1;
+            },
+            function (navbar_component_1_1) {
+                navbar_component_1 = navbar_component_1_1;
             }],
         execute: function() {
             moduleName = "app";
@@ -32,6 +35,7 @@ System.register(["angular", "angular-ui-router", "ui-bootstrap", "angular-modal-
                 "ui.router",
                 "ui.bootstrap"
             ])
+                .directive("sgNavbar", navbar_component_1.SiteGenNavbarDirective)
                 .config(config.routeConfig);
             exports_1("app", app);
             exports_1("moduleName", moduleName);
